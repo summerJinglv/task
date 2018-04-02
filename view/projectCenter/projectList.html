@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>项目大厅</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/mySelf.css">
+  </head>
+  
+ <body>
+ 	<div class="index-header-bar">
+		<div class="bar-box clearfix">
+			<i class="arrow"></i>
+			<div class="pull-left">
+				任务分解平台网站 | 靠谱的平台 
+			</div>
+			<div class="pull-right mr20">
+				<span class="pull-left">欢迎您，</span>
+				<div id="noLogin" class="pull-left">	
+					<a class="blue mr10" href="../loginRegister/login.html">请登录</a>
+					<a class="orange" href="../loginRegister/register.html">免费注册</a>	
+				</div>
+				<div id="logined" class="pull-left">	
+					<div class="index-header-uname">用户名username<i class="glyphicon glyphicon-chevron-down ml10"></i></div>
+					<ul class="user-drop">
+						<li>
+							<a href="../userCenter/userBasicInfo.html"><i class="glyphicon glyphicon-user mr10"></i>个人中心</a>
+						</li>
+						<li>
+							<a href="../financialCenter/cardManage.html"><i class="glyphicon glyphicon-yen mr10"></i>财务中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-bullhorn mr10"></i>推广中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-tasks mr10"></i>任务中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-log-out mr10"></i>退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-header">
+		<div class="i-main clearfix">
+			<img src="../../images/login_logo.png">
+			<div class="i-search">
+				<input class="" type="text" placeholder="搜索项目任务，输入关键字">
+				<button  type="button" ><i class="glyphicon glyphicon-search"></i></button>
+			</div>
+		</div>
+	</div>
+	<div class="index-header-nav clearfix">
+		<div class="nav-box">
+			<i class="arrow"></i>
+			<ul class="ih-nav clearfix">
+				<li>
+					<a href="../index.html">主页</a>
+				</li>
+				<li  class="active">
+					<a href="../projectCenter/projectList.html">项目大厅</a>
+				</li>
+				<li>
+					<a href="../system/newsCenter.html">资讯中心</a>
+				</li>
+				<li>
+					<a href="#">帮助中心</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="pL-search-box">
+		<dl class="pL-search-dl selected">
+			<dt><span style="letter-spacing: 0.5em">已选</span>择：</dt>
+			<dd class="clearfix">
+				<a href="#">网站开发<i class="remove-icon">×</i></a>
+				<a href="#">申领中<i class="remove-icon">×</i></a>
+				<a href="#" class="remove-all">清空筛选</a>
+			</dd>
+		</dl>
+		<dl class="pL-search-dl">
+			<dt>项目类型：</dt>
+			<dd class="clearfix">
+				<a class="on" href="#">网站开发</a>
+				<a href="#">桌面应用</a>
+				<a href="#">APP</a>
+				<a href="#">微信开发</a>
+				<a href="#">管理系统</a>
+				<a href="#">其它</a>
+			</dd>
+		</dl>
+		<dl class="pL-search-dl">
+			<dt>项目状态：</dt>
+			<dd class="clearfix">
+				<a class="on" href="#">申领中</a>
+				<a href="#">开发中</a>
+				<a href="#">已完成</a>
+			</dd>
+		</dl>
+		<dl class="pL-search-dl">
+			<dt>项目预算：</dt>
+			<dd class="clearfix">
+				<a class="on" href="#">1千以下</a>
+				<a href="#">1千~5千</a>
+				<a href="#">5千~1万</a>
+				<a href="#">1万~5万</a>
+				<a href="#">5万~10万</a>
+				<a href="#">10万以上</a>
+				<a href="#">待商议</a>
+			</dd>
+		</dl>
+		<dl class="pL-search-dl">
+			<dt>技能标签：</dt>
+			<dd class="clearfix">
+				<a class="on" href="#">java</a>
+				<a href="#">html</a>
+				<a href="#">PHP</a>
+				<a href="#">javascript</a>
+				<a href="#">bootstrap</a>
+				<a href="#">vue</a>
+				<a href="#">ios</a>
+			</dd>
+		</dl>
+		<dl class="pL-search-dl ">
+			<dt>发布时间：</dt>
+			<dd class="clearfix">
+				<input type="text" class="form-control" placeholder="开始时间">
+				<span class="only-text">-</span>
+				<input type="text" class="form-control" placeholder="结束时间">
+			</dd>
+		</dl>
+		<dl class="pL-search-dl pt10">
+			<dt>项目名称：</dt>
+			<dd class="clearfix">
+				<input type="text" class="form-control" placeholder="项目名称关键字">
+				<button class="btn btn-primary ml20">搜索</button>
+			</dd>
+		</dl>
+	</div>
+	<div class="pL-search-main">
+		<div class="pL-search-content">
+			<dl class="pL-search-sort clearfix">
+				<dt>排序：</dt>
+				<dd class="on">
+					<a href="#">默认排序</a>
+				</dd>
+				<dd class="on">
+					<a href="#">发布时间<i class="glyphicon glyphicon-arrow-up"></i></a>
+				</dd>
+				<dd class="on down">
+					<a href="#">项目预算<i class="glyphicon glyphicon-arrow-up"></i></a>
+				</dd>
+			</dl>
+			<ul class="pL-search-result">
+				<li>
+					<div class="state apply">申领中</div>
+					<div class="pL-sr-part1">
+						<a href="projectDetail.html" target="_blank">
+							<h3>网站定制开发 <span class="fs-12 text-grey ml20">发布日期：2017-10-12 09:44:44</span></h3>
+							<p>域名空间已有，需要做一个类似这样的http://www.sciyon.com/企业网站，要求：提供源码</p>
+							<div class="skill-label">
+								<i>java</i>
+								<i>html</i>
+							</div>
+						</a>
+					</div>
+					<div class="pL-sr-part2">
+						<div class="price-box">
+							¥<span class="price">20000</span><span class="fs-12">元</span>
+						</div>
+						<div class="opt">
+							<span>
+								<i class="glyphicon glyphicon-eye-open"></i>
+								<em>0</em>
+							</span>
+							<span class="pointer">
+								<i class="glyphicon glyphicon-heart-empty"></i>
+								<em>收藏</em>
+							</span>
+						</div>
+					</div>
+					
+				</li>
+				<li>
+					<div class="state">已完成</div>
+					<div class="pL-sr-part1">
+						<a href="#">
+							<h3>微信H5抽奖界面开发<span class="fs-12 text-grey ml20">发布日期：2017-10-12 09:44:44</span></h3>
+							<p>基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现基于微信公众号开发一个抽奖界面，包括UI设计及功能的实现</p>
+							<div class="skill-label">
+								<i>java</i>
+								<i>html</i>
+							</div>
+						</a>
+					</div>
+					<div class="pL-sr-part2">
+						<div class="price-box">
+							¥<span class="price">5000</span><span class="fs-12">元</span>
+						</div>
+						<div class="opt">
+							<span>
+								<i class="glyphicon glyphicon-eye-open"></i>
+								<em>120</em>
+							</span>
+							<span class="pointer on">
+								<i class="glyphicon glyphicon-heart-empty"></i>
+								<em>已收藏</em>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="state dev">开发中</div>
+					<div class="pL-sr-part1">
+						<a href="#">
+							<h3>微信H5抽奖界面开发<span class="fs-12 text-grey ml20">发布日期：2017-10-12 09:44:44</span></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, et? Velit voluptatibus, excepturi fuga repellendus incidunt qui, dolores id minus, hic necessitatibus non nulla pariatur iusto modi, cupiditate ea molestias.</p>
+							<div class="skill-label">
+								<i>java</i>
+								<i>html</i>
+							</div>
+						</a>
+					</div>
+					<div class="pL-sr-part2">
+						<div class="price-box">
+							¥<span class="price">5000</span><span class="fs-12">元</span>
+						</div>
+						<div class="opt">
+							<span>
+								<i class="glyphicon glyphicon-eye-open"></i>
+								<em>11</em>
+							</span>
+							<span class="pointer">
+								<i class="glyphicon glyphicon-heart-empty"></i>
+								<em>收藏</em>
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+ 	
+ 	<!-- 底部 -->
+	<div class="footer">
+	    <div class="footer-wrapper clearfix">
+	        <div class="logo_and_copyright pull-left">
+	            <img src="../../images/login_logo.png">
+	            <p>任务分解平台版权所有 2004-2017</p>
+	            <p>陕ICP备13002508号-6</p>
+	            <p>陕网文[2015]1800-016号</p>
+	        </div>
+	        <div class="footerlinks pull-left">
+	            <h4>帮助中心</h4>
+	            <ul>
+	                <li><a href="#" target="_blank">平台简介</a></li>
+	                <li><a href="#" target="_blank">安全保障</a></li>
+	                <li><a href="#" target="_blank">项目管理</a></li>
+	            </ul>
+	        </div>
+	        <div class="footerlinks pull-left">
+	            <h4>联系我们</h4>
+	            <ul>
+	                <li>电话：</li>
+	                <li>邮箱：</li>
+	                <li>地址：陕西省西安市高新区唐延南路10号中兴产业园I座3层</li>
+	            </ul>
+	        </div>
+	        <div class="footer-qr pull-right">
+	            <h4>产品与服务</h4>
+	            <div style="margin: 0">
+	                <img src="../../images/code_0000.png" alt="APP">
+	                <p>APP</p>
+	            </div>
+	            <div>
+	                <img src="../../images/code_0000.png" alt="最新项目信息">
+	                <p>最新项目信息</p>
+	            </div>
+	            <div>
+	                <img src="../../images/code_0000.png" alt="微信公众号">
+	                <p>微信公众号</p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/layer/layer.js"></script>
+	<script src="../../js/task_common.js"></script>
+  	
+  </body>
+</html>

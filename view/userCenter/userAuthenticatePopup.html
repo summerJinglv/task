@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>实名认证</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/mySelf.css">
+  </head>
+  
+  
+ <body>
+ 	<div class="container-fluid popup">
+        <form class="form-horizontal mt40">
+            <div class="form-group">
+                <label class="col-xs-3 control-label">真实姓名：</label>
+                <div class="col-xs-6">
+                    <input type="password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-3 control-label">身份证号码：</label>
+                <div class="col-xs-6">
+                    <input type="password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-3 control-label">身份证照片：</label>
+                <div class="col-xs-8 moco-control-input clearfix">
+                    <div class="pull-left auth-photo">
+                        <div><i class="icon-plus glyphicon glyphicon-plus"></i>
+                            <p>上传身份证正面照片</p>
+                            <img class="imgfb img-f" src="">
+                            <input type="file" name="fileField" id="img_a" class="upload" data-flag="a">
+                            <input type="hidden" name="key-font" class="js-key js-font">
+                        </div>
+                        <div class="moco-control-tip error"></div>
+                    </div>
+                    <div class="pull-right auth-photo">
+                        <div><i class="icon-plus glyphicon glyphicon-plus"></i>
+                            <p>上传身份证反面照片</p>
+                            <img class="imgfb img-b" src="">
+                            <input type="file" name="fileField" id="img_b" class="upload" data-flag="b">
+                            <input type="hidden" name="key-back" class="js-key js-back">
+                        </div>
+                        <div class="moco-control-tip error"></div>
+                    </div>
+                </div>
+            </div>
+    	</form>
+    </div>
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/layer/layer.js"></script>
+	<script src="../../js/task_common.js"></script>
+ </body>
+ </html>

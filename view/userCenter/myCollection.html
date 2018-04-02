@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>我的收藏</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/mySelf.css">
+  </head>
+  
+ <body>
+ 	<div class="index-header-bar">
+		<div class="bar-box clearfix">
+			<i class="arrow"></i>
+			<div class="pull-left">
+				任务分解平台网站 | 靠谱的平台 
+			</div>
+			<div class="pull-right mr20">
+				<span class="pull-left">欢迎您，</span>
+				<div id="noLogin" class="pull-left">	
+					<a class="blue mr10" href="../loginRegister/login.html">请登录</a>
+					<a class="orange" href="../loginRegister/register.html">免费注册</a>	
+				</div>
+				<div id="logined" class="pull-left">	
+					<div class="index-header-uname">用户名username<i class="glyphicon glyphicon-chevron-down ml10"></i></div>
+					<ul class="user-drop">
+						<li>
+							<a href="../userCenter/userBasicInfo.html"><i class="glyphicon glyphicon-user mr10"></i>个人中心</a>
+						</li>
+						<li>
+							<a href="../financialCenter/cardManage.html"><i class="glyphicon glyphicon-yen mr10"></i>财务中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-bullhorn mr10"></i>推广中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-tasks mr10"></i>任务中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-log-out mr10"></i>退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-header">
+		<div class="i-main clearfix">
+			<img src="../../images/login_logo.png">
+			<div class="i-search">
+				<input class="" type="text" placeholder="搜索项目任务，输入关键字">
+				<button  type="button" ><i class="glyphicon glyphicon-search"></i></button>
+			</div>
+		</div>
+	</div>
+	<div class="index-header-nav clearfix">
+		<div class="nav-box">
+			<i class="arrow"></i>
+			<ul class="ih-nav clearfix">
+				<li class="active">
+					<a href="../index.html">主页</a>
+				</li>
+				<li>
+					<a href="../projectCenter/projectList.html">项目大厅</a>
+				</li>
+				<li>
+					<a href="../system/newsCenter.html">资讯中心</a>
+				</li>
+				<li>
+					<a href="#">帮助中心</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+ 	<div class="userCenter-main clearfix">	
+		<div class="userCenter-left">
+			<div class="user-wapper">
+			  <div class="user-mode">
+				<img class="user-img" src="http://img.mukewang.com//545861f00001be3402200220.jpg">
+				<div class="update-user">
+				  <p><a href="javascript:void(0);" class="js-user-link" onclick="changePhoto()">更换头像</a></p>
+				</div>
+			  </div>
+			  <div class="des-mode">
+				<p>用户名</p>
+				<ul class="user-summary">
+					<li>
+						<span class="pull-left">满意度</span>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning"  style="width:80%;">
+							80%
+						  </div>
+						</div>
+					</li>
+					<li>
+						<span class="pull-left">准时率</span>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning"  style="width:20%;">
+							20%
+						  </div>
+						</div>
+					</li>
+					<li>成交单数<strong class="text-primary ml10">5单</strong></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="uCL-nav-wapper">
+			  <h2>个人中心</h2>
+			  <div class="line"></div>
+			  <ul class="menu">
+				<li>
+					<a href="userBasicInfo.html">
+						基本资料
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userPwdManage.html">
+						密码管理
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userAuthenticate.html" >
+						实名认证
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userScore.html"  >
+						我的积分
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userSkills.html">
+						技能特长
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li> 
+				<li>
+					<a href="myCollection.html" class="on">
+						我的收藏
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userMail.html">
+						站内信
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+			  </ul>
+			</div>
+		</div>
+		<div class="userCenter-right">
+			<div class="uC-common-title">
+            	我的收藏 
+        	</div>
+        	<div class="line"></div>
+        	<div class="mC-wrap">
+                <ul class="fC-search-box">
+                    <li class="clearfix">
+                        <label><span style="letter-spacing: 2em">状</span>态：</label>
+                        <a href="javascript:;" class="on">发布中</a>
+                        <a href="javascript:;">已过期</a>
+                    </li>
+                    <li class="clearfix">
+                        <label>时间范围：</label>
+                        <a href="javascript:;" class="on">今天</a>
+                        <a href="javascript:;">最近一周</a>
+                        <a href="javascript:;">一个月</a>
+                        <a href="javascript:;">三个月</a>
+                        <input type="text" class="form-control">
+                        <i class="only-text">-</i>
+                        <input type="text" class="form-control">
+                    </li>
+                    <li class="clearfix">
+                        <label><span style="letter-spacing: 0.5em">关键</span>字：</label>
+                        <input type="text" class="form-control" placeholder="请输入关键字">
+                        <button type="button" class="btn btn-primary ml20">搜索</button>
+                    </li>
+                </ul>
+                <div class="mC-content">
+                    <ul class="mC-list">
+                        <li>
+                            <div class="part-1">
+                                <span class="text-blue">发布中</span>
+                            </div>
+                            <div class="part-2">
+                                <h4>
+                                    <a href="#" class="orange">xxx项目后台模块编写</a>
+                                </h4>
+                                <div class="clearfix">
+                                    <span>发布日期：<em>2017-10-12 09:44:44</em></span>
+                                    <span>发布人：<em>李**</em></span>
+                                </div>
+                                <div class="clearfix">
+                                    <span>技能标签</span>
+                                    <span class="text-blue">java</span>
+                                    <span class="text-blue">html</span>
+                                </div>
+                            </div>
+                            <div class="part-3">
+                                <a href="javascript:;" onclick="cancelCollect()">
+                                    <i class="glyphicon glyphicon-heart"></i>
+                                    取消收藏
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="part-1">
+                                <span class="text-blue">发布中</span>
+                            </div>
+                            <div class="part-2">
+                                <h4>
+                                    <a href="#" class="orange">xxx项目后台模块编写</a>
+                                </h4>
+                                <div class="clearfix">
+                                    <span>发布日期：<em>2017-10-12 09:44:44</em></span>
+                                    <span>发布人：<em>李**</em></span>
+                                </div>
+                                <div class="clearfix">
+                                    <span>技能标签</span>
+                                    <span class="text-blue">java</span>
+                                    <span class="text-blue">html</span>
+                                </div>
+                            </div>
+                            <div class="part-3">
+                                <a href="javascript:;">
+                                    <i class="glyphicon glyphicon-heart"></i>
+                                    取消收藏
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pagination pagination-sm pull-right">
+                        <li class="disabled">
+                          <a href="#">
+                            <span aria-hidden="true">&lt;上一页</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li>
+                          <a href="#">
+                            <span>下一页&gt;</span>
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+ 	</div>
+ 	<!-- 底部 -->
+	<div class="footer">
+	    <div class="footer-wrapper clearfix">
+	        <div class="logo_and_copyright pull-left">
+	            <img src="../../images/login_logo.png">
+	            <p>任务分解平台版权所有 2004-2017</p>
+	            <p>陕ICP备13002508号-6</p>
+	            <p>陕网文[2015]1800-016号</p>
+	        </div>
+	        <div class="footerlinks pull-left">
+	            <h4>帮助中心</h4>
+	            <ul>
+	                <li><a href="#" target="_blank">平台简介</a></li>
+	                <li><a href="#" target="_blank">安全保障</a></li>
+	                <li><a href="#" target="_blank">项目管理</a></li>
+	            </ul>
+	        </div>
+	        <div class="footerlinks pull-left">
+	            <h4>联系我们</h4>
+	            <ul>
+	                <li>电话：</li>
+	                <li>邮箱：</li>
+	                <li>地址：陕西省西安市高新区唐延南路10号中兴产业园I座3层</li>
+	            </ul>
+	        </div>
+	        <div class="footer-qr pull-right">
+	            <h4>产品与服务</h4>
+	            <div style="margin: 0">
+	                <img src="../../images/code_0000.png" alt="APP">
+	                <p>APP</p>
+	            </div>
+	            <div>
+	                <img src="../../images/code_0000.png" alt="最新项目信息">
+	                <p>最新项目信息</p>
+	            </div>
+	            <div>
+	                <img src="../../images/code_0000.png" alt="微信公众号">
+	                <p>微信公众号</p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+ 	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/layer/layer.js"></script>
+	<script src="../../js/task_common.js"></script>
+    <script>
+        function cancelCollect(){
+            layer.confirm('确认取消收藏吗？', {
+              btn: ['确认','取消'] ,
+              btnAlign: 'c'
+            }, function(){
+               layer.msg('已取消')
+            }, function(){
+              
+            });
+        }
+    </script>
+ </body>
+ </html>

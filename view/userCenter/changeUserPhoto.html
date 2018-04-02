@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>实名认证</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/mySelf.css">
+  </head>
+  
+ <body>
+ 	<div class="container-fluid popup">
+ 		<div class="uphoto-box">
+	        <div class="uphoto">
+	            <img id="js-userImg" src="//img.mukewang.com//545861f00001be3402200220.jpg">
+	        </div>
+	        <div class="uphoto-opt clearfix">  
+	        	<a herf="javascript:;" class="pull-left">换一换</a>    
+	            <form target="uploadtarget" action="postpic" method="post" enctype="multipart/form-data" class="pull-right">  
+	            	<a herf="javascript:;" class="user-btn-fake" onclick="uploadPhotoBtn()">上传头像</a>   
+	                <input class="hide" type="file" title="上传头像" name="fileField" id="upload" accept="image/gif,image/jpeg,image/jpg,image/png" onchange="uploadPhoto(this)">
+	                <input class="hide" type="hidden" name="type" value="1">
+	            </form>
+	        </div>
+		</div>
+ 	</div>
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/layer/layer.js"></script>
+	<script src="../../js/task_common.js"></script>
+ 	<script>
+	    function uploadPhotoBtn(){
+	    	$("#upload").click();
+	    }
+	    function uploadPhoto(file) {
+		    if (file.files && file.files[0]) {
+		      var reader = new FileReader();
+		      reader.onload = function(evt) {
+		      	$("#js-userImg") .attr("src", evt.target.result );
+		      }
+		      reader.readAsDataURL(file.files[0]);
+		    } else {
+		    	$(".uphoto").html('<div style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>');
+		    }
+	  	}
+ 	</script>
+ </body>
+ </html>

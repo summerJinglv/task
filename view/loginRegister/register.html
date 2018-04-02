@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>注册页</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/mySelf.css">
+  </head>
+  
+ <body class="bg-grey">
+	<header class="reg-head">
+        <div class="width1000 clearfix">
+            <a class="reg-logo" href="/" target="_blank"></a>
+            <div class="reg-login">
+                <span>已有账号，</span>
+                <a href="login.html" target="_blank">立即登录</a>
+            </div>
+        </div>
+    </header>
+    <div class="reg-content">
+    	<div class="reg-bg1">
+    		<span></span><i></i>
+    	</div>
+    	<div class="reg-bg2">
+    		<span></span><i></i>
+    	</div>
+    	<div class="reg-main">
+		    <div class="reg-desc">
+		        <h3>欢迎注册</h3>
+		    </div>
+		    <div class="reg-form">
+		        <form id="mobileForm" name="registerForm" action="/register/mobile" method="post" onsubmit="return false;">
+		            <div class="reg-row">
+		                <input class="reg-input" id="username" name="username" type="text" placeholder="用户名（6~20位字母数字）" >
+		            </div>
+		            <div class="reg-row">
+		                <input class="reg-input" id="password" name="password" type="password" placeholder="密码">
+		            </div>
+		            <div class="reg-row">
+		                <input class="reg-input" id="mobilephone" name="mobilephone" type="tel" placeholder="手机号码" >
+		            </div>
+		            <div class="reg-code clearfix">
+		                <input class="reg-input-short" id="code_num" name="codeNum" type="text" placeholder="验证码">
+		               	<button class="reg-smsbtn" id="reg_smsbtn" type="button">获取验证码</button>
+		            </div>
+		            <div class="reg-row">
+		                <input class="reg-input" id="inviteCode" name="inviteCode" type="text" placeholder="邀请码" >
+		            </div>
+		            <div class="reg-agreement">
+		                <label class="mobile_label">
+		                	 <input class="checked" id="mobile_checked" name="isRead" type="checkbox" checked="checked">
+		                	 <span class="info">我已阅读并接受</span>
+		                </label>
+		                <span class="info"><a href="/legal" target="_blank">《用户服务协议》</a></span>
+		            </div>
+		            <div class="reg-row">
+		                <input type="hidden" name="type" value="1">
+		                <input type="hidden" name="_token" value="8r9p49AVYaVLO5tOAzord9cbS75kpzlN5f5pgsb2">
+		                <button type="button" class="reg-btn" id="mobile_reg_btn">立即注册</button>
+		            </div>
+		            <div class="reg_to_mail" onclick="$('#mailForm').show();$('#mobileForm').hide()">通过邮箱注册&gt;&gt;</div>
+		        </form>
+		        <form id="mailForm" name="registerForm" action="/register/email" method="post" style="display: none" onsubmit="return false;">
+		            <div class="reg-row">
+		                <input class="reg-input" id="mail_username" name="username" type="text" placeholder="用户名（6~20位字母数字）">
+		            </div>
+		            <div class="reg-row">
+		                <input class="reg-input" id="mail_password" name="password" type="password" placeholder="密码">
+		            </div>
+		            <div class="reg-row">
+		                <input class="reg-input" id="email" name="email" type="text" placeholder="你的邮箱地址">
+		            </div>
+		            <div class="reg-row">
+		                <input class="reg-input" id="inviteCode" name="inviteCode" type="text" placeholder="邀请码" >
+		            </div>
+		            <div class="reg-agreement clearfix">
+		                <label class="mail_label">
+		                	<input class="checked" id="mail_checked" name="isRead" type="checkbox" checked="checked">
+		                	<span class="info">我已阅读并接受</span>
+		                </label>
+		                <span class="info"><a href="/legal" target="_blank">《用户服务协议》</a></span>
+		            </div>
+		            <div class="reg-row">
+		                <input type="hidden" name="type" value="9">
+		                <input type="hidden" name="_token" value="8r9p49AVYaVLO5tOAzord9cbS75kpzlN5f5pgsb2">
+						 <button type="button" class="reg-btn" id="mail_reg_btn">立即注册</button>
+		            </div>
+		            <div class="reg_to_mobile" onclick="$('#mobileForm').show();$('#mailForm').hide()">通过手机注册&gt;&gt;</div>
+		        </form>
+		    </div>
+		</div>
+    </div>
+  	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/layer/layer.js"></script>
+	<script src="../../js/task_common.js"></script>
+  </body>
+</html>

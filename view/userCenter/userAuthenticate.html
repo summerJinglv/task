@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>实名认证</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/mySelf.css">
+  </head>
+  
+ <body>
+ 	 <div class="index-header-bar">
+		<div class="bar-box clearfix">
+			<i class="arrow"></i>
+			<div class="pull-left">
+				任务分解平台网站 | 靠谱的平台 
+			</div>
+			<div class="pull-right mr20">
+				<span class="pull-left">欢迎您，</span>
+				<div id="noLogin" class="pull-left">	
+					<a class="blue mr10" href="../loginRegister/login.html">请登录</a>
+					<a class="orange" href="../loginRegister/register.html">免费注册</a>	
+				</div>
+				<div id="logined" class="pull-left">	
+					<div class="index-header-uname">用户名username<i class="glyphicon glyphicon-chevron-down ml10"></i></div>
+					<ul class="user-drop">
+						<li>
+							<a href="../userCenter/userBasicInfo.html"><i class="glyphicon glyphicon-user mr10"></i>个人中心</a>
+						</li>
+						<li>
+							<a href="../financialCenter/cardManage.html"><i class="glyphicon glyphicon-yen mr10"></i>财务中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-bullhorn mr10"></i>推广中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-tasks mr10"></i>任务中心</a>
+						</li>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-log-out mr10"></i>退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-header">
+		<div class="i-main clearfix">
+			<img src="../../images/login_logo.png">
+			<div class="i-search">
+				<input class="" type="text" placeholder="搜索项目任务，输入关键字">
+				<button  type="button" ><i class="glyphicon glyphicon-search"></i></button>
+			</div>
+		</div>
+	</div>
+	<div class="index-header-nav clearfix">
+		<div class="nav-box">
+			<i class="arrow"></i>
+			<ul class="ih-nav clearfix">
+				<li class="active">
+					<a href="../index.html">主页</a>
+				</li>
+				<li>
+					<a href="../projectCenter/projectList.html">项目大厅</a>
+				</li>
+				<li>
+					<a href="../system/newsCenter.html">资讯中心</a>
+				</li>
+				<li>
+					<a href="#">帮助中心</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+ 	<div class="userCenter-main clearfix">	
+		<div class="userCenter-left">
+			<div class="user-wapper">
+			  <div class="user-mode">
+				<img class="user-img" src="http://img.mukewang.com//545861f00001be3402200220.jpg">
+				<div class="update-user">
+				  <p><a href="javascript:void(0);" class="js-user-link" onclick="changePhoto()">更换头像</a></p>
+				</div>
+			  </div>
+			  <div class="des-mode">
+				<p>用户名</p>
+				<ul class="user-summary">
+					<li>
+						<span class="pull-left">满意度</span>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning"  style="width:80%;">
+							80%
+						  </div>
+						</div>
+					</li>
+					<li>
+						<span class="pull-left">准时率</span>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning"  style="width:20%;">
+							20%
+						  </div>
+						</div>
+					</li>
+					<li>成交单数<strong class="text-primary ml10">5单</strong></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="uCL-nav-wapper">
+			  <h2>个人中心</h2>
+			  <div class="line"></div>
+			  <ul class="menu">
+				<li>
+					<a href="userBasicInfo.html">
+						基本资料
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userPwdManage.html">
+						密码管理
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userAuthenticate.html"  class="on">
+						实名认证
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userScore.html">
+						我的积分
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userSkills.html">
+						技能特长
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li> 
+				<li>
+					<a href="myCollection.html">
+						我的收藏
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="userMail.html">
+						站内信
+						<span class="arr"><i class="glyphicon glyphicon-menu-right"></i></span>
+					</a>
+				</li>
+			  </ul>
+			</div>
+		</div>
+		<div class="userCenter-right">
+			<div class="uC-common-title">
+            	实名认证
+        	</div>
+        	<div class="line"></div>
+        	<div class="uA-wrap">
+                <div class="auth-box">
+                    <a href="javascript:void(0);" class="btn btn-success auth-start js-start" onclick="authenticate()">开始认证</a>
+                </div>
+                <dl class="auth-des">
+                    <dt>认证须知</dt>
+                    <dd>1、实名认证可以提升你的个人信息及虚拟财产的安全等级，同时也能够更好的体验各项服务；</dd>
+                    <dd>2、我们将在你提交身份证信息后的5个工作日（不包含节假日）内完成审核，审核结果将会以短信和系统通知的形式发送给你；</dd>
+                    <dd>3、如若账号还未绑定手机，建议你提前<a class="red" href="#" target="_blank">绑定手机</a>；</dd>
+                    <dd>4、实名认证审核完成后，将无法修改和删除，请谨慎填写；</dd>
+                    <dd>5、你需要准备身份证照片（需正反两面），请确保证件照片清晰可见，严禁PS；</dd>
+                    <dd>6、我们会确保你所提供的信息均处于严格的保密状态，不会泄露；</dd>
+                    <dd style="font-weight:bold;">7、如存在恶意乱填写姓名，身份证号码，及上传与身份证证件无关图片者，一经发现将冻结账号。</dd>
+                </dl>
+            </div>
+		</div>
+ 	</div>
+ 	<!-- 底部 -->
+	<div class="footer">
+	    <div class="footer-wrapper clearfix">
+	        <div class="logo_and_copyright pull-left">
+	            <img src="../../images/login_logo.png">
+	            <p>任务分解平台版权所有 2004-2017</p>
+	            <p>陕ICP备13002508号-6</p>
+	            <p>陕网文[2015]1800-016号</p>
+	        </div>
+	        <div class="footerlinks pull-left">
+	            <h4>帮助中心</h4>
+	            <ul>
+	                <li><a href="#" target="_blank">平台简介</a></li>
+	                <li><a href="#" target="_blank">安全保障</a></li>
+	                <li><a href="#" target="_blank">项目管理</a></li>
+	            </ul>
+	        </div>
+	        <div class="footerlinks pull-left">
+	            <h4>联系我们</h4>
+	            <ul>
+	                <li>电话：</li>
+	                <li>邮箱：</li>
+	                <li>地址：陕西省西安市高新区唐延南路10号中兴产业园I座3层</li>
+	            </ul>
+	        </div>
+	        <div class="footer-qr pull-right">
+	            <h4>产品与服务</h4>
+	            <div style="margin: 0">
+	                <img src="../../images/code_0000.png" alt="APP">
+	                <p>APP</p>
+	            </div>
+	            <div>
+	                <img src="../../images/code_0000.png" alt="最新项目信息">
+	                <p>最新项目信息</p>
+	            </div>
+	            <div>
+	                <img src="../../images/code_0000.png" alt="微信公众号">
+	                <p>微信公众号</p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+ 	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/layer/layer.js"></script>
+	<script src="../../js/task_common.js"></script>
+    <script>
+        function authenticate(){
+            layer.open({
+                type:2,
+                title:"实名认证",
+                maxmin: true, 
+                area: ['680px', '480px'],
+                content: 'userAuthenticatePopup.html',
+                btn: ['保存', '取消'],
+                btnAlign: 'c'
+
+            })
+        }
+    </script>
+ </body>
+</html>
